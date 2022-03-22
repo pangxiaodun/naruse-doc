@@ -1,0 +1,1 @@
+const t={key:"v-11755518",path:"/Api.html",title:"API",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1647933371e3,contributors:[{name:"SHIROHA",email:"1196768261@qq.com",commits:1}]},filePathRelative:"Api.md"};export{t as data};
