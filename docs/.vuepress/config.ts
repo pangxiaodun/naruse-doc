@@ -30,6 +30,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     }
   },
   base: './',
+  dest: './dist/',
   plugins: [
     [
       '@vuepress/plugin-search',
