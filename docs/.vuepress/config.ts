@@ -29,8 +29,8 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       mode: 'production',
     }
   },
-  base: './',
-  dest: './dist/',
+  base: '/naruse-doc/docs/dist/',
+  dest: './docs/dist/',
   plugins: [
     [
       '@vuepress/plugin-search',
