@@ -1,0 +1,1 @@
+const t={key:"v-4699dc7e",path:"/JS%E5%BC%95%E6%93%8E.html",title:"JS\u5F15\u64CE",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1647930177e3,contributors:[{name:"SHIROHA",email:"1196768261@qq.com",commits:1}]},filePathRelative:"JS\u5F15\u64CE.md"};export{t as data};
