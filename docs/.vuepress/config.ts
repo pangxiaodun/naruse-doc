@@ -14,6 +14,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     sidebar: [
       './',
       './快速开始.md',
+      './入门.md',
       './组件库.md',
       './API.md',
       './JS引擎.md',
