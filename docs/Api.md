@@ -702,7 +702,7 @@ $openChat.openChat({
 
 
 
-### $openChat.contactCustomerService(option)
+### $openChat.contactCustomerService(text, nick)
 
 联系旺旺的简易版本，当不填nick时自动转向对应产品客服
 
@@ -710,10 +710,10 @@ $openChat.openChat({
 
 **option**
 
-| 参数 | 类型     | 必填 | 说明                                               |
-| ---- | -------- | ---- | -------------------------------------------------- |
-| nick | `string` | 否   | 要联系的旺旺名称，当不填nick时自动转向对应产品客服 |
-| text | `string` | 是   | 要发送的消息                                       |
+| 参数     | 类型     | 必填 | 说明                                               |
+| -------- | -------- | ---- | -------------------------------------------------- |
+| **text** | `string` | 是   | 要发送的消息                                       |
+| **nick** | `string` | 否   | 要联系的旺旺名称，当不填nick时自动转向对应产品客服 |
 
 #### 示例
 
