@@ -137,19 +137,8 @@ Naruse.getSystemInfo({
 
 
 
-自己的曝光
-
-什么都不会弹出
-
-主动弹窗
-
-
-
-
-
 ## 路由
 
-### getCurrentPageName()
 
 
 
