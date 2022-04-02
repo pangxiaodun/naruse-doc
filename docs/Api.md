@@ -708,8 +708,6 @@ $openChat.openChat({
 
 #### 参数
 
-**option**
-
 | 参数     | 类型     | 必填 | 说明                                               |
 | -------- | -------- | ---- | -------------------------------------------------- |
 | **text** | `string` | 是   | 要发送的消息                                       |
@@ -718,9 +716,7 @@ $openChat.openChat({
 #### 示例
 
 ```javascript
-$openChat.contactCustomerService({
-  text: '我有问题要联系客服！'
-})
+$openChat.contactCustomerService('我有问题要联系客服！')
 ```
 
 
