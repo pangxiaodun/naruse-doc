@@ -860,6 +860,13 @@ $ayApi.api({
 
 广告接口信息，广告接口请求到的数据均在里面
 
+adData大概是一个如下JSON的一个JS对象
+
+```
+```
+
+
+
 
 
 ### $adImport.callback(isBlock)
