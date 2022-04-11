@@ -731,6 +731,32 @@ console.log(userInfo)
 
 
 
+### $userInfoChanger.updateUserInfo()
+
+更新用户信息
+
+> 当用户完成某些动作后需要更新用户信息，用于从后端重新获取最新的用户信息
+
+#### 返回值
+
+**Promise\<newest\>**
+
+| 参数   | 说明                                              |
+| ------ | ------------------------------------------------- |
+| newest | 用户最新的用户信息，与getUserInfo获取到相同的参数 |
+
+#### 示例
+
+```javascript
+$userInfoChanger.updateUserInfo().then((newest) => {
+  console.log(newest)
+})
+```
+
+
+
+
+
 ### $beacon
 
 爱用专用埋点
@@ -786,7 +812,7 @@ console.log($moment('2012-10-14'))
 
 ### $ayApi.api(option)
 
-http请求api，请注意
+http请求api
 
 > 默认所有请求均为POST请求
 
@@ -809,7 +835,46 @@ http请求api，请注意
 ```javascript
 $ayApi.api({ 
 	method: '/test/qwer',
-  host: 'https://trade.aiyongtech.com'
+  host: 'https://trade.aiyongtech.com',
+  callback: (res) => {
+    console.log('请求结果', res)
+  }
+})
+```
+
+
+
+### $ayApi.apiAsync(option)
+
+http请求api的异步版
+
+> 默认所有请求均为POST请求
+
+#### 参数
+
+**option**
+
+| 参数    | 类型                 | 必填 | 说明       |
+| ------- | -------------------- | ---- | ---------- |
+| method  | `string`             | 是   | 请求URL    |
+| args    | `Record<stirng,any>` | 否   | 请求参数   |
+| mode    | `jsonp | post `      | 否   | 请求类型   |
+| host    | `string`             | 否   | 服务器地址 |
+| headers | `Record<stirng,any>` | 否   | 请求头     |
+
+#### 返回值
+
+> Promise< T >
+
+接口请求成功时，promise会被reslove，请求失败时，会被reject
+
+#### 示例
+
+```javascript
+$ayApi.apiAsync(option).then((res) => {
+  console.log('接口请求成功啦', res)
+}).catch((err) => {
+  console.log('接口请求失败啦', err)
 })
 ```
 
@@ -846,7 +911,7 @@ $ayApi.api({
 | btnText | `string` | 是   | 按钮文字     |
 | pid     | `number` | 是   | 广告pid      |
 
-### 
+
 
 ###  $adImport
 
