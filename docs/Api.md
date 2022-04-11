@@ -260,7 +260,7 @@ Naruse.navigateToWebPage({
 Naruse.setClipboardData({
   data: 'data',
   success: function (res) {
-    Taro.getClipboardData({
+    Naruse.getClipboardData({
       success: function (res) {
         console.log(res.data)
       }
@@ -436,7 +436,7 @@ option
 #### 示例代码
 
 ```javascript
-Taro.removeStorage({
+Naruse.removeStorage({
   key: 'key',
   success: function (res) {
     console.log(res)
