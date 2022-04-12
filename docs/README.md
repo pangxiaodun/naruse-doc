@@ -17,34 +17,22 @@ Naruse是一个多端统一，支持使用 **react** 开发，同时多端支持
 
 
 
-# packages
-## naruse-element
-用于在支付宝小程序内模拟dom树，同时提供一个简易的react运行时
-#### 借鉴
-1. [NervJS/Taro](https://github.com/NervJS/taro/tree/next/packages/taro-runtime)
-   开放式跨端跨框架解决方案
-2. [Tencent/Kbone](https://github.com/Tencent/kbone)
-   一个致力于微信小程序和 Web 端同构的解决方案
-3. [Facebook/React](https://github.com/facebook/react)
-   About A declarative, efficient, and flexible JavaScript library for building user interfaces.
-4. [支付宝开发程序](https://opendocs.alipay.com/mini/developer) 提供文档支持
+# 借鉴
++ [NervJS/Taro](https://github.com/NervJS/taro/tree/next/packages/taro-runtime)
+  开放式跨端跨框架解决方案
 
-## naruse-parser
-12KB的js编译器+js解释器
-用于在小程序等不支持动态执行js代码的环境内运行js代码
++ [Tencent/Kbone](https://github.com/Tencent/kbone)
+  一个致力于微信小程序和 Web 端同构的解决方案
 
-#### 借鉴
-1. [acornjs/acorn](https://github.com/acornjs/acorn)
-   A small, fast, JavaScript-based JavaScript parser
-2. [bramblex/jsjs](https://github.com/bramblex/jsjs)
-   About
-简易的 JavaScript 元循环解释器
++ [Facebook/React](https://github.com/facebook/react)
+  About A declarative, efficient, and flexible JavaScript library for building user interfaces.
 
-## naruse-h5
-在pc端封装了统一的组件库，同时提供与小程序一致的事件机制与热更新开发体验
++ [支付宝开发程序](https://opendocs.alipay.com/mini/developer) 
 
-## rollup-plugin-naruse
-naruse rollup 插件与loader，用与将标准的react组件转换为naruse-paser引擎支持的代码
+  提供文档支持
 
-## naurse-ay-polyfill
-爱用项目所需的polyfill，用于本地环境开发使用
++ [acornjs/acorn](https://github.com/acornjs/acorn)
+  A small, fast, JavaScript-based JavaScript parser
+
++ [bramblex/jsjs](https://github.com/bramblex/jsjs)
+  About 简易的 JavaScript 元循环解释器
