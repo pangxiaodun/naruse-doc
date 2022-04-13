@@ -927,7 +927,39 @@ $ayApi.apiAsync(option).then((res) => {
 
 adData大概是一个如下JSON的一个JS对象
 
-```
+```typescript
+interface adData {
+    message: "OK" | "offline",
+    open_id: string,
+    results: [
+        {
+            creative_name: string,
+            dest_url: string,
+            pid: number,
+            img_size: string,
+            secondary_class: string,
+            creative_id: string,
+            primary_class: string,
+            user_define: {
+                id: "templateDefine",
+                title: "自定义模板",
+                body: {
+                    /** 加载的代码 */
+                    code: string;
+                    [key: string]: string;
+                }
+            },
+            group_id: number,
+            img_path: string,
+            creative_type: string,
+            pid_name: string,
+            plan_id: number,
+        }
+    ],
+    status: "200" | "500",
+    total_num: 1 | 0,
+    createTime: number
+}
 ```
 
 
