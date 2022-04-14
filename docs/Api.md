@@ -775,6 +775,8 @@ $userInfoChanger.updateUserInfo().then((newest) => {
 
 发送神策埋点
 
+> 广告系统相关埋点请使用封装好的广告[$adSensorsBeacon](#$adSensorsBeacon)
+
 | 参数 | 类型                 | 必填 | 说明         |
 | ---- | -------------------- | ---- | ------------ |
 | name | `string`             | 是   | 神策埋点名称 |
@@ -794,7 +796,7 @@ $sensorsBeacon.sensorsBeacon('test', {
 
 日期处理函数，具体调用方式可以直接查看官方文档
 
-http://momentjs.cn/docs/
+[http://momentjs.cn/docs/](http://momentjs.cn/docs/)
 
 #### 示例
 
