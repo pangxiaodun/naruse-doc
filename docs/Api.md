@@ -775,7 +775,7 @@ $userInfoChanger.updateUserInfo().then((newest) => {
 
 发送神策埋点
 
-> 广告系统相关埋点请使用封装好的广告[$adSensorsBeacon](#$adSensorsBeacon)
+> 广告系统相关埋点请使用封装好的广告[$adSensorsBeacon](#adSensorsBeacon)
 
 | 参数 | 类型                 | 必填 | 说明         |
 | ---- | -------------------- | ---- | ------------ |
