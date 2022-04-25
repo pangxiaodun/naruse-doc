@@ -826,7 +826,7 @@ http请求api
 | ----------- | -------------------- | ---- | -------------- |
 | method      | `string`             | 是   | 请求URL        |
 | args        | `Record<stirng,any>` | 否   | 请求参数       |
-| mode        | `jsonp | post `      | 否   | 请求类型       |
+| mode        | `jsonp` 或 `post `   | 否   | 请求类型       |
 | host        | `string`             | 否   | 服务器地址     |
 | headers     | `Record<stirng,any>` | 否   | 请求头         |
 | callback    | `(res: any) => void` | 否   | 成功后调用     |
@@ -839,6 +839,7 @@ http请求api
 $ayApi.api({ 
 	method: '/test/qwer',
   host: 'https://trade.aiyongtech.com',
+  apiName: 'aiyong.test.get'
   callback: (res) => {
     console.log('请求结果', res)
   }
@@ -861,7 +862,7 @@ http请求api的异步版
 | ------- | -------------------- | ---- | -------------- |
 | method  | `string`             | 是   | 请求URL        |
 | args    | `Record<stirng,any>` | 否   | 请求参数       |
-| mode    | `jsonp | post `      | 否   | 请求类型       |
+| mode    | `jsonp` 或 `post `     | 否   | 请求类型       |
 | host    | `string`             | 否   | 服务器地址     |
 | headers | `Record<stirng,any>` | 否   | 请求头         |
 | apiName | `string`             | 是   | 移动端网关映射 |

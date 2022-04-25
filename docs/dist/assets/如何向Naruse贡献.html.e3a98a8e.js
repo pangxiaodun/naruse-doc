@@ -1,1 +1,0 @@
-const e={key:"v-50eb252e",path:"/%E5%A6%82%E4%BD%95%E5%90%91Naruse%E8%B4%A1%E7%8C%AE.html",title:"\u5982\u4F55\u5411Naruse\u8D21\u732EApi",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"\u5982\u4F55\u5411Naruse\u8D21\u732E.md"};export{e as data};
