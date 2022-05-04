@@ -555,7 +555,7 @@ Naruse.clearStorageSync()
 
 ## DOM
 
-#### renderComponentOnPage(pageRoute,T)
+### renderComponentOnPage(pageRoute,T)
 
 在某个指定的页面渲染某个组件，渲染组件在页面中具体的位置依照Componet组件的位置而不同。
 
