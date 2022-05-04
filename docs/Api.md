@@ -135,11 +135,7 @@ Naruse.getSystemInfo({
 
 
 
-
-
 ## 路由
-
-
 
 
 ### navigateTo(option)
@@ -553,6 +549,88 @@ Naruse.clearStorage()
 
 ```javascript
 Naruse.clearStorageSync()
+```
+
+
+
+## DOM
+
+#### renderComponentOnPage(pageRoute,T)
+
+在某个指定的页面渲染某个组件，渲染组件在页面中具体的位置依照Componet组件的位置而不同。
+
+> 注意：如果要渲染的页面并没有被加载，则组件并不会渲染，即使页面加载了也不会重新渲染
+
+#### 参数
+
+**pageRoute** 页面路由
+
+> string
+
+**T**   渲染组件
+
+> Naruse.Component
+
+#### 示例
+
+```jsx
+class Demo extends React.Component {
+  render () {
+    return <view>测试组件</view>
+  }
+}
+Naruse.renderComponentOnPage('/pages/index/index', Demo)
+```
+
+
+
+## HOC（高阶函数）
+
+### wtihPage(T)
+
+你可以用withPage包裹你的组件，你的组件通过这个高阶函数会你的组件在**初始化**时，将当前页面的 **page** 实例作为参数 `currentPage` 传入到组件的props中供你使用。
+
+#### 参数
+
+> withPage = (T: Naruse.Component) => Naruse.component
+
+**Page** 页面实例
+
+| 参数   | **类型**                 | **说明**                                                 |
+| ------ | ------------------------ | -------------------------------------------------------- |
+| route  | `string`                 | 当前页面路由。示例：小程序端: `pages/my/my` h5端 :`#/my` |
+| events | `PageEvent`              | 页面事件中心，订阅事件监听页面的相关行为                 |
+| parma  | `Record<string, string>` | 页面路由参数                                             |
+
+**PageEvent** 页面事件中心
+
+| 参数 | **类型**                                | **说明**     |
+| ---- | --------------------------------------- | ------------ |
+| on   | `(eventName: string, Function)=>void`   | 监听某个事件 |
+| off  | ``(eventName: string, Function)=>void`` | 卸载某个事件 |
+
+**目前支持的事件有**
+
+| 事件名       | 触发时机           |
+| ------------ | ------------------ |
+| onUnload     | 当页面被卸载时调用 |
+| onPageScroll | 当页面滚动时触发   |
+
+#### 示例
+
+```jsx
+class Demo extends Naruse.Component {
+  componentDidMount () {
+    const { currentPage } = this.props;
+   	console.log(currentPage.route);
+    currentPage.on('onUnload', () => {
+      	console.log('当前页面被卸载啦，提醒一下');
+    });
+  }
+  render () {
+    return <view>测试页</view>;
+  }
+}
 ```
 
 
