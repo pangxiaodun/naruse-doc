@@ -631,6 +631,8 @@ class Demo extends Naruse.Component {
     return <view>测试页</view>;
   }
 }
+
+export default Naruse.withPage(Demo)
 ```
 
 
