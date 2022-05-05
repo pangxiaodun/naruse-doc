@@ -555,7 +555,7 @@ Naruse.clearStorageSync()
 
 ## DOM
 
-小程序端并没有提供关于DOM节点直接的操作，但是Naurse封装了一些特殊的API帮助开发者在小程序内渲染组件
+小程序端并没有提供关于DOM节点直接的操作，Naruse也没有像其他主流跨平台框架使用模拟底层DOM的方式，故在小程序端提供了一些DOM操作API供大家使用。
 
 ### renderComponentOnPage(pageRoute,T)
 
