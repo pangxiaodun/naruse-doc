@@ -557,6 +557,8 @@ Naruse.clearStorageSync()
 
 ### renderComponentOnPage(pageRoute,T)
 
+> 基础库0.0.6以上支持
+
 在某个指定的页面渲染某个组件，渲染组件在页面中具体的位置依照Componet组件的位置而不同。
 
 > 注意：如果要渲染的页面并没有被加载，则组件并不会渲染，即使页面加载了也不会重新渲染
@@ -588,6 +590,8 @@ Naruse.renderComponentOnPage('/pages/index/index', Demo)
 
 ### wtihPage(T)
 
+> 基础库0.0.6以上支持
+
 你可以用withPage包裹你的组件，你的组件通过这个高阶函数会你的组件在**初始化**时，将当前页面的 **page** 实例作为参数 `currentPage` 传入到组件的props中供你使用。
 
 #### 参数
@@ -604,17 +608,22 @@ Naruse.renderComponentOnPage('/pages/index/index', Demo)
 
 **PageEvent** 页面事件中心
 
-| 参数 | **类型**                                | **说明**     |
-| ---- | --------------------------------------- | ------------ |
-| on   | `(eventName: string, Function)=>void`   | 监听某个事件 |
-| off  | ``(eventName: string, Function)=>void`` | 卸载某个事件 |
+| 参数     | **类型**                                | **说明**           |
+| -------- | --------------------------------------- | ------------------ |
+| on       | `(eventName: string, Function)=>void`   | 监听某个事件       |
+| off      | ``(eventName: string, Function)=>void`` | 卸载某个事件       |
+| ~~once~~ | `(eventName: string, Function)=>void`   | 只监听一个某个事件 |
 
 **目前支持的事件有**
 
-| 事件名       | 触发时机           |
-| ------------ | ------------------ |
-| onUnload     | 当页面被卸载时调用 |
-| onPageScroll | 当页面滚动时触发   |
+| 事件名       | 触发时机             |
+| ------------ | -------------------- |
+| onUnload     | 当页面被卸载时调用   |
+| onPageScroll | 当页面滚动时触发     |
+| onHide       | 当页面被隐藏时触发   |
+| onShow       | 当页面再次展示时触发 |
+
+> 挂载事件完毕请不要忘记调用卸载事件哦
 
 #### 示例
 
@@ -623,7 +632,7 @@ class Demo extends Naruse.Component {
   componentDidMount () {
     const { currentPage } = this.props;
    	console.log(currentPage.route);
-    currentPage.on('onUnload', () => {
+    currentPage.events.on('onUnload', () => {
       	console.log('当前页面被卸载啦，提醒一下');
     });
   }
