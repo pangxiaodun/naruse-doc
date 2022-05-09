@@ -561,6 +561,12 @@ Naruse.clearStorageSync()
 
 > 基础库0.0.6以上支持
 
+```md
+::: warning
+此api因为实验性功能原因，在0.0.6版本是作为全局变量使用！
+:::
+```
+
 在某个指定的页面渲染某个组件，渲染组件在页面中具体的位置依照Componet组件的位置而不同。
 
 > 注意：如果要渲染的页面并没有被加载，则组件并不会渲染，即使页面加载了也不会重新渲染
@@ -583,7 +589,8 @@ class Demo extends React.Component {
     return <view>测试组件</view>
   }
 }
-Naruse.renderComponentOnPage('/pages/index/index', Demo)
+// 注意！作为全局变量直接使用！
+renderComponentOnPage('/pages/index/index', Demo)
 ```
 
 
