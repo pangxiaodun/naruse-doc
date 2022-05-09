@@ -572,13 +572,12 @@ Naruse.clearStorageSync()
 
 #### 参数
 
-**pageRoute** 页面路由
+**pageRoute** 页面路由 `string`
 
-> string
+此处要填写标准的小程序路由，一般是不带/开头的
 
-**T**   渲染组件
 
-> Naruse.Component
+**T**   渲染组件  `Naruse.Component`
 
 #### 示例
 
@@ -589,7 +588,7 @@ class Demo extends React.Component {
   }
 }
 // 注意！作为全局变量直接使用！
-renderComponentOnPage('/pages/index/index', Demo)
+renderComponentOnPage('pages/index/index', Demo)
 ```
 
 
