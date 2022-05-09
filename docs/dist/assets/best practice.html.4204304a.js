@@ -1,0 +1,1 @@
+const e={key:"v-1c2e7698",path:"/best%20practice.html",title:"\u6700\u4F73\u5B9E\u8DF5",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"withPage",slug:"withpage",children:[]}],git:{updatedTime:1652061474e3,contributors:[{name:"SHIROHA",email:"1196768261@qq.com",commits:1}]},filePathRelative:"best practice.md"};export{e as data};

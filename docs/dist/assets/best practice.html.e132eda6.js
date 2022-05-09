@@ -1,1 +1,0 @@
-const t={key:"v-1c2e7698",path:"/best%20practice.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"withPage",slug:"withpage",children:[]}],git:{updatedTime:null,contributors:[]},filePathRelative:"best practice.md"};export{t as data};
