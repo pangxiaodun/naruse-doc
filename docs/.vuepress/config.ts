@@ -18,6 +18,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       './关于React.md',
       './组件库.md',
       './API.md',
+      './best practice.md',
       './JS引擎.md',
       './如何使用.md',
       './更新记录.md',
