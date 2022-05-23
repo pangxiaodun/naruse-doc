@@ -11,6 +11,20 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
+    backToTop: true,
+    logo: './imgs/N.png',
+    navbar: [
+      // NavbarItem
+      {
+        text: '指南',
+        link: './入门.md',
+      },
+      // NavbarGroup
+      {
+        text: 'API',
+        link: './API.md',
+      },
+    ],
     sidebar: [
       './',
       './快速开始.md',
