@@ -12,7 +12,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   theme: '@vuepress/theme-default',
   themeConfig: {
     backToTop: true,
-    logo: './imgs/N.png',
+    logo: 'https://s1.ax1x.com/2022/05/23/XSUGwj.png',
     navbar: [
       // NavbarItem
       {
