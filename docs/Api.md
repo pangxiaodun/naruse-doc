@@ -46,7 +46,7 @@ Naruse.setStorage({ key: '123', data: '123' }).then(function (res) {
 | storage         | String   | 设备磁盘容量。PC没有此字段                                   |
 | currentBattery  | String   | 当前电量百分比。PC没有此字段                                 |
 | system          | String   | 系统版本。pc端为 mac/win/linux/unix                          |
-| platform        | String   | 系统名：Android，iOS / iPhone OS / PC                        |
+| platform        | String   | 系统名：Android/iOS / iPhone OS / PC                        |
 | titleBarHeight  | Number   | 标题栏高度。PC为0                                            |
 | statusBarHeight | Number   | 状态栏高度。PC为0                                            |
 | screenWidth     | Number   | 屏幕宽度。                                                   |
@@ -99,7 +99,7 @@ Naruse.setStorage({ key: '123', data: '123' }).then(function (res) {
 | storage         | String   | 设备磁盘容量。PC没有此字段                                   |
 | currentBattery  | String   | 当前电量百分比。PC没有此字段                                 |
 | system          | String   | 系统版本。pc端为 mac/win/linux/unix                          |
-| platform        | String   | 系统名：Android，iOS / iPhone OS / PC                        |
+| platform        | String   | 系统名：Android/iOS / iPhone OS / PC                        |
 | titleBarHeight  | Number   | 标题栏高度。PC为0                                            |
 | statusBarHeight | Number   | 状态栏高度。PC为0                                            |
 | screenWidth     | Number   | 屏幕宽度。                                                   |
@@ -202,6 +202,10 @@ Naruse.navigateBack({
 ### navigateToWebPage(option)
 
 打开一个外部H5页面
+
+::: 注意
+在小程序等具有域名白名单的应用内使用此功能时，请确定要打开的链接在白名单内
+:::
 
 #### 参数
 
