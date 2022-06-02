@@ -1,6 +1,5 @@
 # 简介
 
-> しろは　なるせ（shiroha naruse） 白羽 鸣濑是一名鸟白岛上的巫女，经常站在海岸边眺望大海。
 Naruse是一个多端统一，支持使用 **react** 开发，同时多端支持  **热更新**  的解决方案
 
 特性
@@ -17,13 +16,13 @@ Naruse是一个多端统一，支持使用 **react** 开发，同时多端支持
 
 ## 可以用Naruse做些什么？
 
-+ 嵌入已有的前端业务线，针对某些页面，组件实现局部热更新
++ 无缝融入已有的前端业务线，针对某些页面，组件实现局部热更新
 + 不同平台，多个产品内维护同一个模块
 + ~~开发一个跨端热更新产品~~
 
 
 
-# 借鉴
+# Inspired by
 + [NervJS/Taro](https://github.com/NervJS/taro/tree/next/packages/taro-runtime)
   开放式跨端跨框架解决方案
 
@@ -33,12 +32,20 @@ Naruse是一个多端统一，支持使用 **react** 开发，同时多端支持
 + [Facebook/React](https://github.com/facebook/react)
   About A declarative, efficient, and flexible JavaScript library for building user interfaces.
 
-+ [支付宝开发程序](https://opendocs.alipay.com/mini/developer) 
-
-  提供文档支持
++ [支付宝开发程序](https://opendocs.alipay.com/mini/developer)  提供文档支持
 
 + [acornjs/acorn](https://github.com/acornjs/acorn)
   A small, fast, JavaScript-based JavaScript parser
 
 + [bramblex/jsjs](https://github.com/bramblex/jsjs)
   About 简易的 JavaScript 元循环解释器
+
+
+
+## 为什么叫做Naruse
+
+[![XtBL2q.jpg](https://s1.ax1x.com/2022/06/02/XtBL2q.jpg)](https://imgtu.com/i/XtBL2q)
+
+> 白羽鳴瀬  しろは　なるせ（shiroha naruse） 白羽 鸣濑是一名鸟白岛上的巫女，经常站在海岸边眺望大海。
+
+ 便是 key 社游戏 summer pockets 中的一名角色
