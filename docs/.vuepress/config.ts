@@ -13,6 +13,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   themeConfig: {
     backToTop: true,
     logo: 'https://s1.ax1x.com/2022/05/23/XSUGwj.png',
+    home: './home.md',
     navbar: [
       // NavbarItem
       {
