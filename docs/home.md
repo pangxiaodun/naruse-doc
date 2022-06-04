@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /imgs/N.png
+heroImage: https://s1.ax1x.com/2022/05/23/XSUGwj.png
 heroText: Naruse
 tagline: 一个轻量、跨平台、热更新的框架
 actions:
