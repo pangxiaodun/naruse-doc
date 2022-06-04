@@ -2,7 +2,7 @@
 home: true
 heroImage: https://s1.ax1x.com/2022/05/23/XSUGwj.png
 heroText: Naruse
-tagline: 一个轻量、跨平台、热更新的框架
+tagline: 一个轻量、跨平台、支持热更新的前端用户界面框架
 actions:
   - text: 快速上手
     link: ./快速开始.md
