@@ -719,6 +719,20 @@ $mappUtils.showTabBar()
 $mappUtils.getCurrentPageName()
 ```
 
+### $mappUtils.getPrevPagePath()
+
+获取上一个页面的路由地址
+
+#### 返回值
+
+返回上一个页面路径名
+
+#### 示例
+
+```javascript
+$mappUtils.getPrevPagePath()
+```
+
 
 
 ### $mappUtils.isIOS()
