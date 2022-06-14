@@ -875,8 +875,17 @@ $userInfoChanger.updateUserInfo().then((newest) => {
 
 爱用专用埋点
 
-> 补充ing
+梦想埋点。
+交易：$beacon.tradeBeacon
+商品：$beacon.itemBeacon
 
+#### 示例
+
+```javascript
+$beacon.tradeBeacon({ func: 'set-error', m1: '缓存失败', d2: err, d3: err, d4: err });
+
+#### TIP：
+m5、m6、m8、m9位固定字端，请勿占用。
 
 
 ### $sensorsBeacon
