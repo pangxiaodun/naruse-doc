@@ -879,13 +879,20 @@ $userInfoChanger.updateUserInfo().then((newest) => {
 交易：$beacon.tradeBeacon
 商品：$beacon.itemBeacon
 
+| 参数 | 类型                 | 必填 | 说明         |
+| ---- | -------------------- | ---- | ------------ |
+| func | `string`             | 是   | 埋点名称 |
+| m1...m9  | `string`         | 否   | 埋点属性。从m1 到 m9  |
+| d1...d9  | `string`         | 否   | 埋点属性。从d1 到 d9  |
 #### 示例
 
 ```javascript
 $beacon.tradeBeacon({ func: 'set-error', m1: '缓存失败', d2: err, d3: err, d4: err });
 
 #### TIP：
-m5、m6、m8、m9位固定字端，请勿占用。
+1. m4 ~ m9为保留字段，请尽量不要使用。
+2. 传的类型只能是字符串格式。
+
 
 
 ### $sensorsBeacon
